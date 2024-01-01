@@ -32,6 +32,14 @@ body {
     font-weight: 600;
     color: hsl(0, 1%, 44%);
 }
+.output-container {
+    margin-left: 50px;
+}
+.output-item {
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
 
 input {
     padding-top: 5px;
@@ -67,14 +75,37 @@ input {
     width: 85%;
     background-color: hsl(0, 1%, 94%);
   }
+
+  span {
+    color: hsl(259, 100%, 65%);
+  }
 /* mobile styling */
 @media screen and (max-width: 600px) {
    .box {
     width: 90%;
+    height: 50%;
     border-bottom-right-radius: 150px;
    }
    .input-container {
-    margin: 30px;
+    margin: 5px;
     margin-top: 50px;
+    }
+
+    .input-container {
+        margin: 15px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .grid-item, input {
+        font-size: 15px;
+        font-weight: 600;
+        width: 65px;
+    }
+    .output-item {
+        font-size: 25px;
+    }
+    .line {
+        width: 50%;
     }
 }
