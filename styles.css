@@ -42,6 +42,31 @@ input {
     border-radius: 10px;
     border: 1px solid hsl(0, 0%, 94%);
 }
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+  }
+  
+  .circle {
+    width: 60px;
+    height: 60px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: none;
+  }
+
+  .circle:hover {
+    cursor: pointer;
+    background-color: hsl(259, 100%, 81%);
+  }
+  
+  .line {
+    height: 2px;
+    width: 85%;
+    background-color: hsl(0, 1%, 94%);
+  }
 /* mobile styling */
 @media screen and (max-width: 600px) {
    .box {
