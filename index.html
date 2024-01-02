@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+  <script src="scripts.js"></script>
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -45,18 +46,18 @@
         <!-- divider and input button -->
         <div class="divider">
             <div class="line"></div>
-            <button class="circle"></button>
+            <button onclick="calculateAge()" class="circle"></button>
         </div>
         <!-- output -->
         <div class="output-container">
             <div class="output-item">
-                <span class="num-output">--</span> years
+                <span class="num-output" id="outputYear">--</span> years
             </div>
             <div class="output-item">
-                <span class="num-output">--</span> months
+                <span class="num-output" id="outputMonth">--</span> months
             </div>
             <div class="output-item">
-                <span class="num-output">--</span> days
+                <span class="num-output" id="outputDay">--</span> days
             </div>
         </div>
       
